@@ -1,9 +1,10 @@
 package com.kv;
 
-import com.kv.LongestSubstring.LongestSubstring;
-import com.kv.Palindrome.Palindrome;
+import com.kv.longestSubstring.LongestSubstring;
+import com.kv.palindrome.Palindrome;
 import com.kv.plus.Plus;
 import com.kv.sum.Sum;
+import com.kv.zTransform.Transform;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -14,13 +15,14 @@ public class Main {
 //        testPlus();
 //        testSum();
 //        testLargeLengthChildString();
+//        testLongestPalindrome();
         long begin = System.currentTimeMillis();
 
-        testLongestPalindrome();
+        testZTransform();
 
         long end = System.currentTimeMillis();
 
-        System.out.println("time:"+(end-begin));
+        System.out.println("time:" + (end - begin));
 
     }
 
@@ -61,7 +63,7 @@ public class Main {
 
     }
 
-    private static void testLongestPalindrome(){
+    private static void testLongestPalindrome() {
 
         Palindrome palindrome = new Palindrome();
 
@@ -69,6 +71,11 @@ public class Main {
 
         System.out.println(palindrome.longestPalindrome("zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz"));
 
+    }
+
+    private static void testZTransform() {
+        Transform transform = new Transform();
+        System.out.println(transform.convert("PAYPALISHIRING", 3));
     }
 
 }
