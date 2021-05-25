@@ -1,6 +1,4 @@
-package com.kv.Palindrome;
-
-import java.sql.PreparedStatement;
+package com.kv.palindrome;
 
 public class Palindrome {
 

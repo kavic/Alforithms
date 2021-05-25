@@ -1,4 +1,4 @@
-package com.kv.LongestSubstring;
+package com.kv.longestSubstring;
 
 public class LongestSubstring {
 
