@@ -1,6 +1,7 @@
 package com.kv;
 
 import com.kv.longestSubstring.LongestSubstring;
+import com.kv.maxArea.MaxArea;
 import com.kv.palindrome.Palindrome;
 import com.kv.plus.Plus;
 import com.kv.sum.Sum;
@@ -16,9 +17,10 @@ public class Main {
 //        testSum();
 //        testLargeLengthChildString();
 //        testLongestPalindrome();
+//        testZTransform();
         long begin = System.currentTimeMillis();
 
-        testZTransform();
+        testMaxArea();
 
         long end = System.currentTimeMillis();
 
@@ -76,6 +78,17 @@ public class Main {
     private static void testZTransform() {
         Transform transform = new Transform();
         System.out.println(transform.convert("PAYPALISHIRING", 3));
+    }
+
+    private static void testMaxArea() {
+        MaxArea maxArea = new MaxArea();
+
+        int[] height = new int[]{1, 8, 6, 2, 5, 4, 8, 3, 7};
+//        int[] height = new int[]{1,1};
+//        int[] height = new int[]{4,3,2,1,4};
+//        int[] height = new int[]{1,2,1};
+//        int[] height = new int[]{1, 3, 2, 5, 25, 24, 5};
+        System.out.println(maxArea.maxArea(height));
     }
 
 }
