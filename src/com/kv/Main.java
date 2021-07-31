@@ -1,5 +1,6 @@
 package com.kv;
 
+import com.kv.intToRoman.IntToRoman;
 import com.kv.longestSubstring.LongestSubstring;
 import com.kv.maxArea.MaxArea;
 import com.kv.palindrome.Palindrome;
@@ -20,7 +21,8 @@ public class Main {
 //        testZTransform();
         long begin = System.currentTimeMillis();
 
-        testMaxArea();
+//        testMaxArea();
+        testIntToRoman();
 
         long end = System.currentTimeMillis();
 
@@ -89,6 +91,14 @@ public class Main {
 //        int[] height = new int[]{1,2,1};
 //        int[] height = new int[]{1, 3, 2, 5, 25, 24, 5};
         System.out.println(maxArea.maxArea(height));
+    }
+
+    private static void testIntToRoman(){
+
+        IntToRoman intToRoman = new IntToRoman();
+        String romanString = intToRoman.intToRoman(1994);
+        System.out.println(romanString);
+
     }
 
 }
